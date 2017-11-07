@@ -30,6 +30,24 @@ so we can ignore the csslint warning.
     vertical-align: middle;
     box-sizing: border-box;
 }
+.pure-form input[type="text"].hidden, .pure-form input[type="text"][hidden], .pure-form input[type="text"] .hidden, .pure-form input[type="text"] [hidden],
+.pure-form input[type="password"].hidden, .pure-form input[type="password"][hidden], .pure-form input[type="password"] .hidden, .pure-form input[type="password"] [hidden],
+.pure-form input[type="email"].hidden, .pure-form input[type="email"][hidden], .pure-form input[type="email"] .hidden, .pure-form input[type="email"] [hidden],
+.pure-form input[type="url"].hidden, .pure-form input[type="url"][hidden], .pure-form input[type="url"] .hidden, .pure-form input[type="url"] [hidden],
+.pure-form input[type="date"].hidden, .pure-form input[type="date"][hidden], .pure-form input[type="date"] .hidden, .pure-form input[type="date"] [hidden],
+.pure-form input[type="month"].hidden, .pure-form input[type="month"][hidden], .pure-form input[type="month"] .hidden, .pure-form input[type="month"] [hidden],
+.pure-form input[type="time"].hidden, .pure-form input[type="time"][hidden], .pure-form input[type="time"] .hidden, .pure-form input[type="time"] [hidden],
+.pure-form input[type="datetime"].hidden, .pure-form input[type="datetime"][hidden], .pure-form input[type="datetime"] .hidden, .pure-form input[type="datetime"] [hidden],
+.pure-form input[type="datetime-local"].hidden, .pure-form input[type="datetime-local"][hidden], .pure-form input[type="datetime-local"] .hidden, .pure-form input[type="datetime-local"] [hidden],
+.pure-form input[type="week"].hidden, .pure-form input[type="week"][hidden], .pure-form input[type="week"] .hidden, .pure-form input[type="week"] [hidden],
+.pure-form input[type="number"].hidden, .pure-form input[type="number"][hidden], .pure-form input[type="number"] .hidden, .pure-form input[type="number"] [hidden],
+.pure-form input[type="search"].hidden, .pure-form input[type="search"][hidden], .pure-form input[type="search"] .hidden, .pure-form input[type="search"] [hidden],
+.pure-form input[type="tel"].hidden, .pure-form input[type="tel"][hidden], .pure-form input[type="tel"] .hidden, .pure-form input[type="tel"] [hidden],
+.pure-form input[type="color"].hidden, .pure-form input[type="color"][hidden], .pure-form input[type="color"] .hidden, .pure-form input[type="color"] [hidden],
+.pure-form select.hidden, .pure-form select[hidden], .pure-form select .hidden, .pure-form select [hidden],
+.pure-form textarea.hidden, .pure-form textarea[hidden], .pure-form textarea .hidden, .pure-form textarea [hidden] {
+        display: none;
+}
 
 /*
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
@@ -42,6 +60,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     box-shadow: inset 0 1px 3px #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+}
+.pure-form input:not([type]).hidden, .pure-form input:not([type])[hidden], .pure-form input:not([type]) .hidden, .pure-form input:not([type]) [hidden] {
+    display: none;
 }
 
 
@@ -91,6 +112,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-form .pure-radio {
     margin: 0.5em 0;
     display: block;
+}
+.pure-form .pure-checkbox.hidden, .pure-form .pure-checkbox[hidden], .pure-form .pure-checkbox .hidden, .pure-form .pure-checkbox [hidden], .pure-form .pure-radio.hidden, .pure-form .pure-radio[hidden], .pure-form .pure-radio .hidden, .pure-form .pure-radio [hidden] {
+    display: none;
 }
 
 .pure-form input[type="text"][disabled],
@@ -167,6 +191,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     color: #333;
     border-bottom: 1px solid #e5e5e5;
 }
+.pure-form legend.hidden, .pure-form legend[hidden], .pure-form legend .hidden, .pure-form legend [hidden] {
+    display: none;
+}
 
 .pure-form-stacked input[type="text"],
 .pure-form-stacked input[type="password"],
@@ -189,6 +216,25 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     display: block;
     margin: 0.25em 0;
 }
+.pure-form-stacked input[type="text"].hidden, .pure-form-stacked input[type="text"][hidden], .pure-form-stacked input[type="text"] .hidden, .pure-form-stacked input[type="text"] [hidden],
+.pure-form-stacked input[type="password"].hidden, .pure-form-stacked input[type="password"][hidden], .pure-form-stacked input[type="password"] .hidden, .pure-form-stacked input[type="password"] [hidden],
+.pure-form-stacked input[type="email"].hidden, .pure-form-stacked input[type="email"][hidden], .pure-form-stacked input[type="email"] .hidden, .pure-form-stacked input[type="email"] [hidden],
+.pure-form-stacked input[type="url"].hidden, .pure-form-stacked input[type="url"][hidden], .pure-form-stacked input[type="url"] .hidden, .pure-form-stacked input[type="url"] [hidden],
+.pure-form-stacked input[type="date"].hidden, .pure-form-stacked input[type="date"][hidden], .pure-form-stacked input[type="date"] .hidden, .pure-form-stacked input[type="date"] [hidden],
+.pure-form-stacked input[type="month"].hidden, .pure-form-stacked input[type="month"][hidden], .pure-form-stacked input[type="month"] .hidden, .pure-form-stacked input[type="month"] [hidden],
+.pure-form-stacked input[type="time"].hidden, .pure-form-stacked input[type="time"][hidden], .pure-form-stacked input[type="time"] .hidden, .pure-form-stacked input[type="time"] [hidden],
+.pure-form-stacked input[type="datetime"].hidden, .pure-form-stacked input[type="datetime"][hidden], .pure-form-stacked input[type="datetime"] .hidden, .pure-form-stacked input[type="datetime"] [hidden],
+.pure-form-stacked input[type="datetime-local"].hidden, .pure-form-stacked input[type="datetime-local"][hidden], .pure-form-stacked input[type="datetime-local"] .hidden, .pure-form-stacked input[type="datetime-local"] [hidden],
+.pure-form-stacked input[type="week"].hidden, .pure-form-stacked input[type="week"][hidden], .pure-form-stacked input[type="week"] .hidden, .pure-form-stacked input[type="week"] [hidden],
+.pure-form-stacked input[type="number"].hidden, .pure-form-stacked input[type="number"][hidden], .pure-form-stacked input[type="number"] .hidden, .pure-form-stacked input[type="number"] [hidden],
+.pure-form-stacked input[type="search"].hidden, .pure-form-stacked input[type="search"][hidden], .pure-form-stacked input[type="search"] .hidden, .pure-form-stacked input[type="search"] [hidden],
+.pure-form-stacked input[type="tel"].hidden, .pure-form-stacked input[type="tel"][hidden], .pure-form-stacked input[type="tel"] .hidden, .pure-form-stacked input[type="tel"] [hidden],
+.pure-form-stacked input[type="color"].hidden, .pure-form-stacked input[type="color"][hidden], .pure-form-stacked input[type="color"] .hidden, .pure-form-stacked input[type="color"] [hidden],
+.pure-form-stacked select.hidden, .pure-form-stacked select[hidden], .pure-form-stacked select .hidden, .pure-form-stacked select [hidden],
+.pure-form-stacked label.hidden, .pure-form-stacked label[hidden], .pure-form-stacked label .hidden, .pure-form-stacked label [hidden],
+.pure-form-stacked textarea.hidden, .pure-form-stacked textarea[hidden], .pure-form-stacked textarea .hidden, .pure-form-stacked textarea [hidden] {
+        display: none;
+}
 
 /*
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
@@ -197,6 +243,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-form-stacked input:not([type]) {
     display: block;
     margin: 0.25em 0;
+}
+.pure-form-stacked input:not([type]).hidden, .pure-form-stacked input:not([type])[hidden], .pure-form-stacked input:not([type]) .hidden, .pure-form-stacked input:not([type]) [hidden] {
+    display: none;
 }
 .pure-form-aligned input,
 .pure-form-aligned textarea,
@@ -208,6 +257,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
+}
+.pure-form-aligned .pure-help-inline.hidden, .pure-form-aligned .pure-help-inline[hidden], .pure-form-aligned .pure-help-inline .hidden, .pure-form-aligned .pure-help-inline [hidden], .pure-form-message-inline.hidden, .pure-form-message-inline[hidden], .pure-form-message-inline .hidden, .pure-form-message-inline [hidden] {
+    display: none;
 }
 .pure-form-aligned textarea {
     vertical-align: top;
@@ -223,6 +275,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     vertical-align: middle;
     width: 10em;
     margin: 0 1em 0 0;
+}
+.pure-form-aligned .pure-control-group label.hidden, .pure-form-aligned .pure-control-group label[hidden], .pure-form-aligned .pure-control-group label .hidden, .pure-form-aligned .pure-control-group label [hidden] {
+    display: none;
 }
 .pure-form-aligned .pure-controls {
     margin: 1.5em 0 0 11em;
@@ -247,6 +302,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     border-radius: 0;
     position: relative;
     top: -1px;
+}
+.pure-form .pure-group input.hidden, .pure-form .pure-group input[hidden], .pure-form .pure-group input .hidden, .pure-form .pure-group input [hidden], .pure-form .pure-group textarea.hidden, .pure-form .pure-group textarea[hidden], .pure-form .pure-group textarea .hidden, .pure-form .pure-group textarea [hidden] {
+    display: none;
 }
 .pure-form .pure-group input:focus,
 .pure-form .pure-group textarea:focus {
@@ -303,10 +361,16 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     vertical-align: middle;
     font-size: 0.875em;
 }
+.pure-form .pure-help-inline.hidden, .pure-form .pure-help-inline[hidden], .pure-form .pure-help-inline .hidden, .pure-form .pure-help-inline [hidden], .pure-form-message-inline.hidden, .pure-form-message-inline[hidden], .pure-form-message-inline .hidden, .pure-form-message-inline [hidden] {
+    display: none;
+}
 
 /* Block help for forms */
 .pure-form-message {
     display: block;
     color: #666;
     font-size: 0.875em;
+}
+.pure-form-message.hidden, .pure-form-message[hidden], .pure-form-message .hidden, .pure-form-message [hidden] {
+    display: none;
 }

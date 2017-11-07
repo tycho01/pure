@@ -11,6 +11,9 @@
     user-select: none;
     box-sizing: border-box;
 }
+.pure-button.hidden, .pure-button[hidden], .pure-button .hidden, .pure-button [hidden] {
+    display: none;
+}
 
 /* Firefox: Get rid of the inner focus border */
 .pure-button::-moz-focus-inner {

@@ -14,7 +14,7 @@
 
 .hidden,
 [hidden] {
-    display: none !important;
+    display: none;
 }
 
 /**
@@ -25,4 +25,7 @@
     max-width: 100%;
     height: auto;
     display: block;
+}
+.pure-img.hidden, .pure-img[hidden], .pure-img .hidden, .pure-img [hidden] {
+    display: none;
 }

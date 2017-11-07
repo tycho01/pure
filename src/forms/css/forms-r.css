@@ -22,7 +22,25 @@
         margin-bottom: 0.3em;
         display: block;
     }
-
+    .pure-form input:not([type]).hidden, .pure-form input:not([type])[hidden], .pure-form input:not([type]) .hidden, .pure-form input:not([type]) [hidden],
+    .pure-form input[type="text"].hidden, .pure-form input[type="text"][hidden], .pure-form input[type="text"] .hidden, .pure-form input[type="text"] [hidden],
+    .pure-form input[type="password"].hidden, .pure-form input[type="password"][hidden], .pure-form input[type="password"] .hidden, .pure-form input[type="password"] [hidden],
+    .pure-form input[type="email"].hidden, .pure-form input[type="email"][hidden], .pure-form input[type="email"] .hidden, .pure-form input[type="email"] [hidden],
+    .pure-form input[type="url"].hidden, .pure-form input[type="url"][hidden], .pure-form input[type="url"] .hidden, .pure-form input[type="url"] [hidden],
+    .pure-form input[type="date"].hidden, .pure-form input[type="date"][hidden], .pure-form input[type="date"] .hidden, .pure-form input[type="date"] [hidden],
+    .pure-form input[type="month"].hidden, .pure-form input[type="month"][hidden], .pure-form input[type="month"] .hidden, .pure-form input[type="month"] [hidden],
+    .pure-form input[type="time"].hidden, .pure-form input[type="time"][hidden], .pure-form input[type="time"] .hidden, .pure-form input[type="time"] [hidden],
+    .pure-form input[type="datetime"].hidden, .pure-form input[type="datetime"][hidden], .pure-form input[type="datetime"] .hidden, .pure-form input[type="datetime"] [hidden],
+    .pure-form input[type="datetime-local"].hidden, .pure-form input[type="datetime-local"][hidden], .pure-form input[type="datetime-local"] .hidden, .pure-form input[type="datetime-local"] [hidden],
+    .pure-form input[type="week"].hidden, .pure-form input[type="week"][hidden], .pure-form input[type="week"] .hidden, .pure-form input[type="week"] [hidden],
+    .pure-form input[type="number"].hidden, .pure-form input[type="number"][hidden], .pure-form input[type="number"] .hidden, .pure-form input[type="number"] [hidden],
+    .pure-form input[type="search"].hidden, .pure-form input[type="search"][hidden], .pure-form input[type="search"] .hidden, .pure-form input[type="search"] [hidden],
+    .pure-form input[type="tel"].hidden, .pure-form input[type="tel"][hidden], .pure-form input[type="tel"] .hidden, .pure-form input[type="tel"] [hidden],
+    .pure-form input[type="color"].hidden, .pure-form input[type="color"][hidden], .pure-form input[type="color"] .hidden, .pure-form input[type="color"] [hidden],
+    .pure-form label.hidden, .pure-form label[hidden], .pure-form label .hidden, .pure-form label [hidden] {
+        display: none;
+    }
+    
     .pure-group input:not([type]),
     .pure-group input[type="text"],
     .pure-group input[type="password"],
@@ -47,7 +65,10 @@
         display: block;
         width: 100%;
     }
-
+    .pure-form-aligned .pure-control-group label.hidden, .pure-form-aligned .pure-control-group label[hidden], .pure-form-aligned .pure-control-group label .hidden, .pure-form-aligned .pure-control-group label [hidden] {
+        display: none;
+    }
+    
     .pure-form-aligned .pure-controls {
         margin: 1.5em 0 0 0;
     }
@@ -60,5 +81,8 @@
         font-size: 0.75em;
         /* Increased bottom padding to make it group with its related input element. */
         padding: 0.2em 0 0.8em;
+    }
+    .pure-form .pure-help-inline.hidden, .pure-form .pure-help-inline[hidden], .pure-form .pure-help-inline .hidden, .pure-form .pure-help-inline [hidden], .pure-form-message-inline.hidden, .pure-form-message-inline[hidden], .pure-form-message-inline .hidden, .pure-form-message-inline [hidden], .pure-form-message.hidden, .pure-form-message[hidden], .pure-form-message .hidden, .pure-form-message [hidden] {
+        display: none;
     }
 }

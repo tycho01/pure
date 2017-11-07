@@ -2,6 +2,9 @@
 .pure-menu-item .pure-menu-item {
     display: block;
 }
+.pure-menu-item .pure-menu-item.hidden, .pure-menu-item .pure-menu-item[hidden], .pure-menu-item .pure-menu-item .hidden, .pure-menu-item .pure-menu-item [hidden] {
+    display: none;
+}
 
 .pure-menu-children {
     display: none;
@@ -23,6 +26,9 @@
 .pure-menu-active > .pure-menu-children {
     display: block;
     position: absolute;
+}
+.pure-menu-allow-hover:hover > .pure-menu-children.hidden, .pure-menu-allow-hover:hover > .pure-menu-children[hidden], .pure-menu-allow-hover:hover > .pure-menu-children .hidden, .pure-menu-allow-hover:hover > .pure-menu-children [hidden], .pure-menu-active > .pure-menu-children.hidden, .pure-menu-active > .pure-menu-children[hidden], .pure-menu-active > .pure-menu-children .hidden, .pure-menu-active > .pure-menu-children [hidden] {
+    display: none;
 }
 
 /* Vertical Menus - show the dropdown arrow */

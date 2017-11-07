@@ -18,6 +18,9 @@
     display: block;
     width: auto;
 }
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator.hidden, .pure-menu-horizontal .pure-menu-children .pure-menu-separator[hidden], .pure-menu-horizontal .pure-menu-children .pure-menu-separator .hidden, .pure-menu-horizontal .pure-menu-children .pure-menu-separator [hidden] {
+    display: none;
+}
 
 .pure-menu-heading {
     text-transform: uppercase;

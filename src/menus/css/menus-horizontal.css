@@ -7,6 +7,9 @@
 .pure-menu-horizontal .pure-menu-list {
     display: inline-block;
 }
+.pure-menu-horizontal .pure-menu-list.hidden, .pure-menu-horizontal .pure-menu-list[hidden], .pure-menu-horizontal .pure-menu-list .hidden, .pure-menu-horizontal .pure-menu-list [hidden] {
+    display: none;
+}
 
 /* Initial menus should be inline-block so that they are horizontal */
 .pure-menu-horizontal .pure-menu-item,
@@ -16,4 +19,7 @@
     *display: inline;
     zoom: 1;
     vertical-align: middle;
+}
+.pure-menu-horizontal .pure-menu-item.hidden, .pure-menu-horizontal .pure-menu-item[hidden], .pure-menu-horizontal .pure-menu-item .hidden, .pure-menu-horizontal .pure-menu-item [hidden], .pure-menu-horizontal .pure-menu-heading.hidden, .pure-menu-horizontal .pure-menu-heading[hidden], .pure-menu-horizontal .pure-menu-heading .hidden, .pure-menu-horizontal .pure-menu-heading [hidden], .pure-menu-horizontal .pure-menu-separator.hidden, .pure-menu-horizontal .pure-menu-separator[hidden], .pure-menu-horizontal .pure-menu-separator .hidden, .pure-menu-horizontal .pure-menu-separator [hidden] {
+    display: none;
 }
